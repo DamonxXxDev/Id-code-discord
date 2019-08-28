@@ -1,20 +1,14 @@
+
+const http = require('http');
 const express = require('express');
 const app = express();
-app.use(express.static('public'));
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html'); 
-});
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
-const http = require('http');
 app.get("/", (request, response) => {
-  response.sendStatus(200); 
+  response.sendStatus(200);
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://.glitch.me`);//project name
-}, 280000); 
+  http.get( `http://id-code-discord.glitch.me/`);
+}, 280000);
 
 const Discord = require('discord.js');
 const clientToken = "token"; //You'll have to set this yourself; read more
