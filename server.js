@@ -33,12 +33,9 @@ disableEveryone: true
 client.on('ready', () => {
 client.user.setStatus("idle")
 client.user.setActivity(`Hello world Im Toxic Bot`,{ type : 'WATCHING' } )
-console.log('#---------------------------------------------------------#')
-console.log(`[Start] ${new Date()}`);
-console.log(`Logged in as * [ " ${client.user.username} " ]`);
-console.log(`servers! [ " ${client.guilds.size} " ]`);
-console.log(`Users! [ " ${client.users.size} " ]`);
-console.log(`channels! [ " ${client.channels.size} " ]`);
+console.log(`Name    - [ " ${client.user.username} " ]`);
+console.log(`servers - [ " ${client.guilds.size} " ]`);
+console.log(`Users   - [ " ${client.users.size} " ]`);
 console.log('#---------------------------------------------------------#')
 
 });
